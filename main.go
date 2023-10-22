@@ -24,6 +24,7 @@ func main() {
 	debugDump := false
 	flag.BoolVar(&debugDump, "debug-dump", false, "Enable traffic debug dump (only for debug usage)")
 	flag.Parse()
+	fmt.Println("Update by Krxk.")
 
 	if host == "" || ((username == "" || password == "") && twfId == "") {
 		log.Fatal("Missing required cli args, refer to `EasierConnect --help`.")
